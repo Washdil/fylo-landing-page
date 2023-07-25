@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+   font-size: 14px;
+}
+
+nav {
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   font-family: "Open Sans";
+   padding: var(--padding);
+}
+
+
+.nav-right ul { 
+   display: flex;
+   flex-direction: row;
+}
+.nav-right ul li a {
+   text-decoration: none;
+   font-weight: 400;
+   color: var(--very-dark-blue);
+}
+
+.nav-right ul li {
+   list-style: none;
+   padding: 1rem;
+}
+
+:root{
+   --very-dark-blue:hsl(243, 87%, 12%);
+   --desaturated-blue:hsl(238, 22%, 44%);
+   --right-blue: hsl(224, 93%, 58%);
+   --moderate-cyan:hsl(170, 45%, 43%);
+   --light-grayish-blue:hsl(240, 75%, 98%);
+   --light-gray:hsl(0, 0%, 75%);
+   --padding:4rem;
+}
+
+.hero1 {
+   width: 100vw;
+   height: 90vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: var(--padding);
+}
+
+.hero1 .img img {
+   width: 40vw;
+   height: 55vh;
+}
+
+.data {
+   margin-right: 1rem;
+}
+.hero1 .img {
+   flex: 1;
+}
+
+.hero1 .data {
+   widows: 50vw;
+   flex: 1;
+   margin-top: 5rem;
+   font-family: "Raleway";
+}
+
+.data h2 {
+   font-size: 3rem;
+   text-align: start;
+   color: var(--very-dark-blue);
+   font-weight: 700;
+   margin-bottom: 1rem;
+}
+
+
+.data p {
+   font-size: 1.2rem;
+   color: var(--very-dark-blue);
+   font-weight: 400;
+   font-family: "Open Sans";
+   margin-bottom: 1rem;
+
+}
+
+.data input {
+   padding: 1rem;
+   width: 25vw;
+   margin-right: 1rem;
+}
+
+.data input::placeholder {
+   color: var(--light-gray);
+}
+
+
+.data button {
+   padding: 1rem 3rem;
+   border: none;
+   border-radius: 0.2rem;
+   background-color: var(--right-blue);
+   color: var(--light-grayish-blue);
+   font-size: 0.8rem;
+   font-family: "Open Sans";
+   font-weight: 400;
+
+}
+
+.hero2 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+   padding:var(--padding);
+   background-image: url("/images/bg-curve-desktop.svg");
+   background-size: cover;
+   background-position: center;
+   
+
+   }
+
+.hero2-img img {
+   widows: 46vw;
+   height: 50vh;
+}
+
+.hero2-data {
+   display: flex;
+   padding: var(--padding);
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: start;
+}
+
+.hero2-data h2 {
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 2.3rem;
+   margin-bottom: 1.2rem;
+}
+
+.hero2-data p {
+   margin-bottom: 1.2rem;
+   color: var(--desaturated-blue);
+   font-size: 1rem;
+   font-family: "Open Sans";
+   font-weight: 400;
+}
+
+.hero2-data a {
+   font-size: 1.3rem;
+   color: var(--moderate-cyan);
+   margin-bottom: 1.2rem;
+}
+
+.hero2-data .testimonial {
+   width: 25vw;
+   height: 30vh;
+   background-color: white;
+   padding: 1.2rem;
+   display: flex;
+   align-items: start;
+   flex-direction: column;
+   /* Basic box shadow */
+   /* Multiple box shadows */
+
+   box-shadow: 
+   2px 0 5px rgba(0, 0, 0, 0.1), /* Right side shadow */
+   -2px 0 5px rgba(0, 0, 0, 0.1), /* Left side shadow */
+   0 2px 5px rgba(0, 0, 0, 0.1), /* Bottom shadow */
+   0 -2px 5px rgba(0, 0, 0, 0.1); /* Top shadow */
+
+ 
+ 
+ 
+}
+
+.testimonial img {
+   font-size: 1rem;
+}
+
+.testimonial p {
+  font-size: 0.8rem;
+  color: var(--desaturated-blue);
+}
+
+.testimonial .dp {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.dp img {
+   width: 2rem;
+   height: 2rem;
+   border-radius: 100%;
+   margin-right: 1rem;
+}
+
+.dp h3, h4 {
+   color: var(--very-dark-blue);
+}
+
+.dp h4 {
+   font-size: 0.8rem;
+}
+
+
+.access {
+   width: 100vw;
+   height: 40vh;
+   background-color: var(--desaturated-blue);
+   padding: var(--padding);
+   display: flex;
+   justify-content: space-between;
+   color: var(--light-grayish-blue);
+
+}
+
+.access h2 {
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 2rem;
+   margin-bottom: 1rem;
+}
+
+.access p {
+   font-family: "Open Sans";
+   font-weight: 400;
+   font-size: 1rem;
+}
+
+.access-input {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+}
+
+.access-input input {
+   padding: 1rem;
+   width: 30vw;
+   border-radius: .3rem;
+   border: none;
+   margin-bottom: 1rem;
+}
+
+.access-input button {
+   padding: 1rem;
+   color: var(--light-grayish-blue);
+   background-color: var(--right-blue);
+   border: none;
+   font-family:"Raleway";
+   font-weight: 700;
+   font-size: 1rem;
+   border-radius: .3rem;
+}
+
+footer {
+   width: 100vw;
+   height: 60vh;
+   background-color: var(--very-dark-blue);
+   padding: var(--padding);
+   color: var(--light-grayish-blue);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+
+}
+
+.footer-heading {
+   color: var(--light-grayish-blue);
+}
+
+.footer-heading p img {
+   margin-right: 1rem;
+
+}
+
+.footer-heading p {
+   margin-top: 1rem;
+   font-family: "Raleway";
+   font-weight: 400;
+}
+
+.list {
+   margin-top: 3rem;
+   list-style: none;
+}
+
+.list ul li {
+   list-style: none;
+   margin-bottom: 1rem;
+   font-family: "Raleway";
+   font-weight: 400;
+   font-size: 1rem;
+}
+
+.icon {
+   margin-top: 3rem;
+}
+
+.icon ul {
+   display: flex;
+}
+
+.icon ul li {
+   margin-right: 1rem;
+   list-style: none;
+}
+
+
+
+
+ /* Media Queries for Responsive Design */
+ 
+ /* Adjust styles for tablets */
+ @media only screen and (max-width: 768px) {
+   /* Add your responsive styles for tablets here */
+   .hero1 .img img {
+     width: 60vw;
+     height: auto;
+   }
+   
+   .data {
+     margin-right: 0;
+   }
+   
+   .data input {
+     width: 100%;
+   }
+   
+   .hero2-img img {
+     width: 80vw;
+     height: auto;
+   }
+   
+   .testimonial {
+     width: 80vw;
+   }
+   
+   .access h2 {
+     font-size: 1.5rem;
+   }
+ }
+ 
+ /* Adjust styles for mobile phones */
+ @media only screen and (max-width: 480px) {
+   /* Add your responsive styles for mobile phones here */
+   .hero1 {
+     flex-direction: column;
+     height: auto;
+   }
+   
+   .hero1 .img img {
+     width: 100%;
+     height: auto;
+   }
+   
+   .data {
+     width: 100%;
+     margin-top: 2rem;
+     text-align: center;
+   }
+   
+   .hero2 {
+     flex-direction: column;
+     height: auto;
+   }
+   
+   .hero2-img img {
+     width: 100%;
+     height: auto;
+   }
+   
+   .hero2-data {
+     width: 100%;
+     padding: 2rem;
+     text-align: center;
+   }
+   
+   .testimonial {
+     width: 100%;
+     margin-bottom: 2rem;
+   }
+   
+   .access {
+     flex-direction: column;
+     height: auto;
+   }
+   
+   .access-input input {
+     width: 100%;
+   }
+   
+   footer {
+     flex-direction: column;
+     height: auto;
+   }
+ }
+ 
